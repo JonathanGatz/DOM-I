@@ -53,3 +53,40 @@ headerImg.src = "img/header-img.png";
 //***************************************************************************************************** */
 
 
+// let topNav = document.getElementById("a");
+// topNav.setAttribute(siteContent["nav"]["img-src"])
+
+// topNav.style.backgroundColor = "green";
+
+// const topNav = document.querySelectorAll("a")
+// console.log('a', topNav)
+
+
+const topNav = document.querySelectorAll('nav a')
+
+topNav.forEach( (element, i) => {
+  element.style.color = "green" 
+  element.textContent = siteContent.nav[`nav-item-${i+1}`]
+});
+
+
+
+
+
+
+// const topNav2 = document.querySelector('a')
+// topNav2.textContent = "Goodby"
+
+// const topNav = document.createElement("a")
+// topNav.classList.add('Services')
+// topNav.classList.add('Products')
+// topNav.classList.add('Vision')
+// topNav.classList.add('About')
+// topNav.append[0, 1, 2, 3]
+
+
+
+let thirdImg = document.getElementById("middle-img");
+thirdImg.setAttribute('src', siteContent["nav"]["img-src"])
+
+thirdImg.src = "img/mid-page-accent.jpg";
