@@ -53,14 +53,6 @@ headerImg.src = "img/header-img.png";
 //***************************************************************************************************** */
 
 
-// let topNav = document.getElementById("a");
-// topNav.setAttribute(siteContent["nav"]["img-src"])
-
-// topNav.style.backgroundColor = "green";
-
-// const topNav = document.querySelectorAll("a")
-// console.log('a', topNav)
-
 
 const topNav = document.querySelectorAll('nav a')
 
@@ -70,23 +62,74 @@ topNav.forEach( (element, i) => {
 });
 
 
-
-
-
-
-// const topNav2 = document.querySelector('a')
-// topNav2.textContent = "Goodby"
-
-// const topNav = document.createElement("a")
-// topNav.classList.add('Services')
-// topNav.classList.add('Products')
-// topNav.classList.add('Vision')
-// topNav.classList.add('About')
-// topNav.append[0, 1, 2, 3]
-
+//***************************************************************************************************** */
 
 
 let thirdImg = document.getElementById("middle-img");
 thirdImg.setAttribute('src', siteContent["nav"]["img-src"])
 
 thirdImg.src = "img/mid-page-accent.jpg";
+
+
+//***************************************************************************************************** */
+
+const ctaB = document.querySelector(".cta-text button")
+ctaB.textContent = siteContent["cta"]["button"]
+
+
+const awesome = document.querySelector("h1")
+awesome.textContent = siteContent["cta"]["h1"]
+
+//***************************************************************************************************** */
+
+
+
+const ctaImg = document.querySelector(".cta img")
+ctaImg.setAttribute("src", siteContent["cta"]["img-src"])
+
+//***************************************************************************************************** */
+
+// textContentH4[0].textContent = siteContent["main-content"]["feature-h4"]
+
+
+const veryTop = document.querySelectorAll(".top-content h4")
+veryTop[0].textContent = siteContent["main-content"]["features-h4"]
+veryTop[1].textContent = siteContent["main-content"]["about-h4"]
+
+const bottomH = document.querySelectorAll(".bottom-content h4")
+bottomH[0].textContent = siteContent["main-content"]["services-h4"]
+bottomH[1].textContent = siteContent["main-content"]["product-h4"]
+bottomH[2].textContent = siteContent["main-content"]["vision-h4"]
+
+
+
+
+//***************************************************************************************************** */
+
+
+const topPar = document.querySelectorAll(".top-content p")
+topPar[0].textContent = siteContent["main-content"]['features-content']
+topPar[1].textContent = siteContent["main-content"]["about-content"]
+
+const veryBottom = document.querySelectorAll(".bottom-content p")
+veryBottom[0].textContent = siteContent["main-content"]["services-content"]
+veryBottom[1].textContent = siteContent["main-content"]["product-content"]
+veryBottom[2].textContent = siteContent["main-content"]["vision-content"]
+
+
+//***************************************************************************************************** */
+
+
+const ContactH = document.querySelector(".contact h4")
+ContactH.textContent = siteContent["contact"]["contact-h4"]
+
+const contactPar = document.querySelectorAll(".contact p")
+contactPar[0].textContent = siteContent["contact"]["address"]
+contactPar[1].textContent = siteContent["contact"]["phone"]
+contactPar[2].textContent = siteContent["contact"]["email"]
+
+
+const footer1 = document.querySelector("footer")
+footer1.textContent = siteContent["footer"]["copyright"]
+
+
