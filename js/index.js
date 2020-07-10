@@ -52,6 +52,7 @@ headerImg.src = "img/header-img.png";
 
 //***************************************************************************************************** */
 
+// Grabbing the nav was pretty hard. Though, once I remembered I could use backticks "spacing issue" things really came together. 
 
 
 const topNav = document.querySelectorAll('nav a')
@@ -73,6 +74,9 @@ thirdImg.src = "img/mid-page-accent.jpg";
 
 //***************************************************************************************************** */
 
+// Set up my .querySelector to capture the cta text & button in a parameter. I accessed info using .text-content
+
+
 const ctaB = document.querySelector(".cta-text button")
 ctaB.textContent = siteContent["cta"]["button"]
 
@@ -80,16 +84,12 @@ ctaB.textContent = siteContent["cta"]["button"]
 const awesome = document.querySelector("h1")
 awesome.textContent = siteContent["cta"]["h1"]
 
-//***************************************************************************************************** */
 
-
-
-const ctaImg = document.querySelector(".cta img")
-ctaImg.setAttribute("src", siteContent["cta"]["img-src"])
+// I pulled the text above the button. This was pretty simple because it's the only h1 tag
 
 //***************************************************************************************************** */
 
-// textContentH4[0].textContent = siteContent["main-content"]["feature-h4"]
+// I decided to group both the h4's together
 
 
 const veryTop = document.querySelectorAll(".top-content h4")
@@ -102,10 +102,11 @@ bottomH[1].textContent = siteContent["main-content"]["product-h4"]
 bottomH[2].textContent = siteContent["main-content"]["vision-h4"]
 
 
-
+// I accesed the each content of the parameter by their index. Then exicuted the section (main-content), then specific section (service-h4)
 
 //***************************************************************************************************** */
 
+// I am pretty much going to do the same thing (style) with all of the content 
 
 const topPar = document.querySelectorAll(".top-content p")
 topPar[0].textContent = siteContent["main-content"]['features-content']
@@ -116,18 +117,25 @@ veryBottom[0].textContent = siteContent["main-content"]["services-content"]
 veryBottom[1].textContent = siteContent["main-content"]["product-content"]
 veryBottom[2].textContent = siteContent["main-content"]["vision-content"]
 
+// btw, proud moment but this might have been the cleanest code I have ever writen. Not to say my other code is bad but this visually looks really good #OCD
 
 //***************************************************************************************************** */
 
 
+// I pretty mush followed a similar proccess as above. 
+
 const ContactH = document.querySelector(".contact h4")
 ContactH.textContent = siteContent["contact"]["contact-h4"]
+
+// This section was straight forward 
 
 const contactPar = document.querySelectorAll(".contact p")
 contactPar[0].textContent = siteContent["contact"]["address"]
 contactPar[1].textContent = siteContent["contact"]["phone"]
 contactPar[2].textContent = siteContent["contact"]["email"]
 
+
+// and another seperation. I really enjoyed this project! 
 
 const footer1 = document.querySelector("footer")
 footer1.textContent = siteContent["footer"]["copyright"]
